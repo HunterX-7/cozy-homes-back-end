@@ -10,7 +10,7 @@ user2 = User.create(name: "Gabriel")
 
 house1 = House.create(
   {
-    type: "Apartment",
+    house_type: "Apartment",
     photo: "https://upload.wikimedia.org/wikipedia/commons/3/30/Penthouse_in_Ullanlinna%2C_Helsinki.jpg",
     garage: 2,
     bedrooms: 4,
@@ -23,7 +23,7 @@ house1 = House.create(
 
   house2 = House.create(
   {
-    type: "Apartment",
+    house_type: "Apartment",
     photo: "https://upload.wikimedia.org/wikipedia/commons/0/04/Penthouse_Rendering.jpg",
     garage: 2,
     bedrooms: 4,
@@ -36,13 +36,13 @@ house1 = House.create(
 
   house3 = House.create(
   {
-    type: "Duplex",
+    house_type: "Duplex",
     photo: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Sausalito-modern-duplex.jpg",
     garage: 2,
     bedrooms: 3,
     bathrooms: 2,
     area: 170.5,
-    location: "Los Angeles, California"
+    location: "Los Angeles, California",
     daily_price: 65.50,
     description: "This spacious Duplex is perfect for families or groups of friends looking for a comfortable and convenient home away from home. With three bedrooms, two bathrooms, and a garage, this house has plenty of space for everyone. The location is ideal for exploring all that Los Angeles has to offer."
     
@@ -50,7 +50,7 @@ house1 = House.create(
 
   house4 = House.create(
   {
-    type: "Apartment",
+    house_type: "Apartment",
     photo: "https://upload.wikimedia.org/wikipedia/commons/4/40/400SGreenLoft.jpg",
     garage: 1,
     bedrooms: 2,
@@ -63,7 +63,7 @@ house1 = House.create(
 
   house5 = House.create(
   {
-    type: "Studio",
+    house_type: "Studio",
     photo: "https://upload.wikimedia.org/wikipedia/commons/d/d6/Studio_Apartment_Minneapolis_1.jpg",
     garage: 0,
     bedrooms: 1,
@@ -76,7 +76,7 @@ house1 = House.create(
 
   house6 = House.create(
   {
-    type: "Apartment",
+    house_type: "Apartment",
     photo: "https://en.wikipedia.org/wiki/Villa#/media/File:Baederarchitektur-Binz_1658.jpg",
     garage: 1,
     bedrooms: 3,
