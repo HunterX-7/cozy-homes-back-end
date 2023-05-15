@@ -9,7 +9,8 @@ user1 = User.create(name: "Juan Pablo")
 user2 = User.create(name: "Gabriel")
 
 house1 = House.create(
-  {
+  { 
+    name: "The Azteca",
     house_type: "Apartment",
     photo: "https://upload.wikimedia.org/wikipedia/commons/3/30/Penthouse_in_Ullanlinna%2C_Helsinki.jpg",
     garage: 2,
@@ -22,7 +23,8 @@ house1 = House.create(
   })
 
   house2 = House.create(
-  {
+  { 
+    name: "The Riviera",
     house_type: "Apartment",
     photo: "https://upload.wikimedia.org/wikipedia/commons/0/04/Penthouse_Rendering.jpg",
     garage: 2,
@@ -35,7 +37,8 @@ house1 = House.create(
   })
 
   house3 = House.create(
-  {
+  {  
+    name: "The Sausalito",
     house_type: "Duplex",
     photo: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Sausalito-modern-duplex.jpg",
     garage: 2,
@@ -49,7 +52,8 @@ house1 = House.create(
   })
 
   house4 = House.create(
-  {
+  {  
+    name: "The Green loft",
     house_type: "Apartment",
     photo: "https://upload.wikimedia.org/wikipedia/commons/4/40/400SGreenLoft.jpg",
     garage: 1,
@@ -62,7 +66,8 @@ house1 = House.create(
   })
 
   house5 = House.create(
-  {
+  { 
+    name: "Studio Apartment Minneapolis",
     house_type: "Studio",
     photo: "https://upload.wikimedia.org/wikipedia/commons/d/d6/Studio_Apartment_Minneapolis_1.jpg",
     garage: 0,
@@ -75,7 +80,8 @@ house1 = House.create(
   })
 
   house6 = House.create(
-  {
+  {  
+    name: "Baeder architektur village",
     house_type: "Apartment",
     photo: "https://en.wikipedia.org/wiki/Villa#/media/File:Baederarchitektur-Binz_1658.jpg",
     garage: 1,
