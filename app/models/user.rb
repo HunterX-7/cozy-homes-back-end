@@ -1,6 +1,5 @@
 class User < ApplicationRecord
+  has_many :reservations, dependent: :destroy
 
-has_many :reservations, dependent: :destroy
-
-validates :name, presence: true
+  validates :name, presence: true
 end
