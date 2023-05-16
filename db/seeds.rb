@@ -83,7 +83,7 @@ house1 = House.create(
   {  
     name: "Baeder architektur village",
     style: "Apartment",
-    photo: "https://en.wikipedia.org/wiki/Villa#/media/File:Baederarchitektur-Binz_1658.jpg",
+    photo: "https://upload.wikimedia.org/wikipedia/commons/3/30/Penthouse_in_Ullanlinna%2C_Helsinki.jpg",
     garage: 1,
     bedrooms: 3,
     bathrooms: 2,
