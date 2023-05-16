@@ -1,11 +1,10 @@
 class Api::V1::UsersController < ApplicationController
-  
   # get api/v1/users
   def index
     @users = User.all
     render json: @users
   end
- 
+
   # post api/v1/users => params should be on body
   def create
     user = User.new(user_params)
@@ -17,8 +16,9 @@ class Api::V1::UsersController < ApplicationController
     end
   end
 
-private
-def user_params
-  params.require(:user).permit(:name)
-end
+  private
+
+  def user_params
+    params.require(:user).permit(:name)
+  end
 end

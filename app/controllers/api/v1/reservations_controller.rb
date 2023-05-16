@@ -1,6 +1,6 @@
 class Api::V1::ReservationsController < ApplicationController
- # get /api/v1/users/1/reservations
- def index
+  # get /api/v1/users/1/reservations
+  def index
     p params[:user_id]
     reservations = Reservation.where(user_id: params[:user_id])
     render json: reservations, status: :ok
@@ -31,7 +31,6 @@ class Api::V1::ReservationsController < ApplicationController
   private
 
   def reservation_params
-    params.require(:reservation).permit(:house_id, :start_date, :end_date, :user_id)
+    params.require(:reservation).permit(:house_id, :startDate, :endDate, :user_id)
   end
-
 end
