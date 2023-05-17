@@ -1,7 +1,7 @@
 class Api::V1::ReservationsController < ApplicationController
   def index
     @user = User.find_by(name: params[:name])
-  
+
     if @user
       reservations = @user.reservations
       render json: reservations.as_json(include: { house: { only: %i[name] } })
