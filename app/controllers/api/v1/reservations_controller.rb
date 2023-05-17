@@ -1,36 +1,33 @@
 class Api::V1::ReservationsController < ApplicationController
-  # get /api/v1/users/1/reservations
   def index
-    p params[:user_id]
-    reservations = Reservation.where(user_id: params[:user_id])
-    render json: reservations, status: :ok
-  end
-
-  # post /api/v1/users/1/reservations
-  def create
-    reservation = Reservation.new(reservation_params)
-
-    if reservation.save
-      render json: reservation, status: :ok
+    @user = User.find_by(name: params[:name])
+  
+    if @user
+      reservations = @user.reservations
+      render json: reservations.as_json(include: { house: { only: %i[name] } })
     else
-      render json: reservation.errors, status: :unprocessable_entity
+      render json: { error: 'User not found' }, status: :not_found
     end
   end
 
-  # get /api/v1/users/1/reservations/1
-  def show
-    reservation = Reservation.where(id: params[:id], user_id: params[:user_id])
-    render json: reservation, status: :ok
-  end
-
-  def destroy
-    @reservation = Reservation.find(params[:id])
-    @reservation.destroy
+  def create
+    reservation = Reservation.new(reservation_params)
+    if reservation.save
+      render json: {
+        status: :created,
+        json: reservation
+      }
+    else
+      render json: {
+        status: :unprocessable_entity,
+        errors: reservation.errors
+      }
+    end
   end
 
   private
 
   def reservation_params
-    params.require(:reservation).permit(:house_id, :startDate, :endDate, :user_id)
+    params.require(:reservation).permit(:user_id, :house_id, :startDate, :endDate)
   end
 end
