@@ -1,4 +1,5 @@
 class Api::V1::ReservationsController < ApplicationController
+ 
   def index
     @user = User.find_by(name: params[:name])
 

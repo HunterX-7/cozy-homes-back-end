@@ -1,4 +1,6 @@
 class Api::V1::HousesController < ApplicationController
+  
+
   # GET /api/v1/houses
   def index
     @houses = House.all
