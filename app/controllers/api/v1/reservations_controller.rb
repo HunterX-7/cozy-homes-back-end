@@ -5,7 +5,7 @@ class Api::V1::ReservationsController < ApplicationController
 
     if @user
       reservations = @user.reservations
-      render json: reservations.as_json(include: { house: { only: %i[name] } })
+      render json: reservations.as_json(include: { user: { only: %i[name] }, house: { only: %i[name location] } })
     else
       render json: { error: 'User not found' }, status: :not_found
     end
