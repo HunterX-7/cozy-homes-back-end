@@ -1,6 +1,7 @@
 class Api::V1::AccountsController < ApplicationController
+  
   def create
-    @user = User.find_by(username: session_params[:username])
+    @user = User.find_by(name: session_params[:name])
 
     if @user
       render json: {
@@ -11,7 +12,7 @@ class Api::V1::AccountsController < ApplicationController
       render json: {
         login: false,
         status: :unauthorized,
-        errors: { username: ['No such user, please try again'] }
+        errors: { name: ['No such user, please try again'] }
       }, status: :unauthorized
     end
   end
@@ -26,6 +27,6 @@ class Api::V1::AccountsController < ApplicationController
   private
 
   def session_params
-    params.require(:user).permit(:username, :errors)
+    params.require(:user).permit(:name, :errors)
   end
 end
