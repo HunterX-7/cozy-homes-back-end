@@ -1,5 +1,4 @@
 class Api::V1::AccountsController < ApplicationController
-  
   def create
     @user = User.find_by(name: session_params[:name])
 
