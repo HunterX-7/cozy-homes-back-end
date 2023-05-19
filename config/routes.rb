@@ -9,7 +9,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       get "/reservations/:name", to: 'reservations#index'
       resources :users, only: [:index, :create] 
-      resources :reservations, only: [:index, :show, :create, :destroy] 
+      resources :reservations, only: [:index, :create] 
       resources :houses, only: [:index, :show, :create, :destroy] 
       resources :accounts, only: [:create]
     end 
