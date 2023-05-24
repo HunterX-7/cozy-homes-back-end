@@ -10,7 +10,7 @@ class Api::V1::UsersController < ApplicationController
     if User.exists?(name: @user.name)
       render json: {
         status: :unprocessable_entity,
-        errors: { name: ['The user already exists, please use another name'] }
+        errors: { name: ['The user already exists'] }
       }
     elsif @user.save
       render json: { user: @user, status: :created }
