@@ -166,6 +166,31 @@ Once the rails server is running, please follow the next link to start the front
 
 ## 👥 Authors <a name="authors"></a>
 
+👤 *Francisco Quintero*
+
+- GitHub: [@HunterX-7](https://github.com/HunterX-7)
+- Twitter: [@franquin07](https://twitter.com/franquin07)
+- LinkedIn: [Francisco Quintero](https://www.linkedin.com/in/francisco-asis-quintero-cede%C3%B1o/)
+
+ 
+👤 *Pierre Barba*
+
+- GitHub: [@pierreBarba](https://github.com/PierreBarba)
+- Twitter: [@pierreBarba](https://twitter.com/home)
+- LinkedIn: [@pierreBarba](https://www.linkedin.com/in/jean-pierre-barba/)
+
+ 
+👤 *Juan Pablo Guerrero*
+
+- GitHub: [@Juan Pablo Guerrero](https://github.com/Juanpa8830)
+- LinkedIn: [@Juan Pablo Guerrero](https://www.linkedin.com/in/juanpabloguerrerorios/)
+
+
+👤 *Gabriel Cilfone*
+
+- GitHub: [Gabriel Cilfone](https://github.com/cilfonegabriel)
+- LinkedIn: [Gabriel Cilfone](www.linkedin.com/in/gabriel-cilfone/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
