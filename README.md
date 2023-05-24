@@ -10,7 +10,6 @@
 
 </div>
 
-</div>
 
 
 <!-- TABLE OF CONTENTS -->
@@ -84,12 +83,24 @@ This project was implemented using:
   </ul>
 </details>
 
+  <br/>
+
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
 > Key features of the application.
  
+ - Introducing a comprehensive full stack web application that empowers users with the ability to register and log in using a unique name, ensuring a personalized and secure experience.
+ - Upon registration, users gain access to a wide range of features, including the ability to seamlessly add, delete, and browse registered houses. With a diverse selection of houses 
+   available, users have the freedom to reserve any property that suits their preferences.
+ - To ensure a smooth user experience, the application provides publicly accessible API endpoints such as /api/v1/houses/ and /api/v1/houses/:id, enabling users to explore available houses effortlessly. 
+   Additionally, private API endpoints like /api/v1/reservations/:name are exclusively accessible to logged-in users, offering them the privilege to manage their reservations securely.
+ - Privacy is of utmost importance, and each user's reservation data remains confidential and inaccessible to others. Robust security measures are implemented to safeguard user information and ensure that data privacy is upheld at all times.
+ - The API itself is designed to deliver an exceptional user experience, returning specific error messages meticulously organized for different types of bad requests. This thoughtful approach enhances the overall usability and helps users easily identify and resolve any issues they may encounter.
+ - The website user interface follows carefully crafted design guidelines, ensuring an intuitive and visually appealing experience for users  [design guidelines](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign).
+. The interface is designed with user convenience in mind, enabling effortless navigation and seamless interaction with the application's functionalities.
+ - Experience the power of this full stack web application, where user registration, house management, and secure reservations are seamlessly integrated to provide a truly exceptional and personalized user experience.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
