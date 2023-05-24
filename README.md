@@ -234,11 +234,10 @@ Give a ⭐️ if you like this project!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Authors would like to thank:
-- [Murat Korkmaz](https://www.behance.net/muratk)
-- [Microverse](https://www.microverse.org/)
-- Code Reviewers
-- Coding Partners
+ We would like to thank:
+ - [Murat Korkmaz](https://www.behance.net/muratk) for the Original Design Idea.
+ - [Microverse](https://www.microverse.org/)
+ - Coding Partners
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
